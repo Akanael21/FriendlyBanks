@@ -1,0 +1,2164 @@
+ERROR 2025-07-20 23:05:02,261 email_service 4516 9220 Erreur lors de l'envoi de l'email à novaltiscorp@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ada2fe7eead31-4f9acdbbb82sm1706930137.4 - gsmtp')
+ERROR 2025-07-20 23:06:56,712 email_service 4516 9220 Erreur lors de l'envoi de l'email à synapsesis9@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 71dfb90a1353d-53765060123sm2257890e0c.22 - gsmtp')
+INFO 2025-07-20 23:10:51,464 autoreload 8912 19856 Watching for file changes with StatReloader
+INFO 2025-07-20 23:13:28,454 autoreload 15816 8640 Watching for file changes with StatReloader
+INFO 2025-07-20 23:30:54,169 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-20 23:31:12,418 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:31:21,223 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:31:28,210 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+ERROR 2025-07-20 23:31:40,955 email_service: Erreur lors de l'envoi de l'email à novaltiscorp@gmail.com: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a1e0cc1a2514c-88b0ac73d3esm2089935241.12 - gsmtp')
+ERROR 2025-07-20 23:31:40,978 log: Internal Server Error: /api/signup/
+ERROR 2025-07-20 23:31:40,979 basehttp: "POST /api/signup/ HTTP/1.1" 500 84
+INFO 2025-07-20 23:31:51,525 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:31:52,009 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:31:52,076 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:56:56,181 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-20 23:57:03,482 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:57:11,428 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-20 23:58:23,311 email_service: Email de vérification envoyé à frankkoussie@outlook.fr
+INFO 2025-07-20 23:58:23,314 auth_views: Nouvel utilisateur créé: frankkoussie@outlook.fr
+INFO 2025-07-20 23:58:23,317 basehttp: "POST /api/signup/ HTTP/1.1" 201 146
+INFO 2025-07-21 00:01:07,038 basehttp: "OPTIONS /api/verify-email/ HTTP/1.1" 200 0
+ERROR 2025-07-21 00:03:14,493 email_service: Erreur lors de l'envoi de l'email de bienvenue à frankkoussie@outlook.fr: Connection unexpectedly closed: [WinError 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte
+INFO 2025-07-21 00:03:14,523 auth_views: Email vérifié pour l'utilisateur: frankkoussie@outlook.fr
+INFO 2025-07-21 00:03:14,618 basehttp: "POST /api/verify-email/ HTTP/1.1" 200 206
+INFO 2025-07-21 00:03:27,879 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 00:03:29,484 basehttp: "POST /api/token/ HTTP/1.1" 200 486
+INFO 2025-07-21 00:03:29,494 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-07-21 00:03:29,579 basehttp: "GET /api/users/ HTTP/1.1" 200 388
+INFO 2025-07-21 00:03:34,940 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 00:03:34,957 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 00:03:35,071 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 00:03:35,179 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+WARNING 2025-07-21 00:15:06,770 log: Unauthorized: /api/token/
+WARNING 2025-07-21 00:15:06,771 basehttp: "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-07-21 00:15:20,670 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:15:51,008 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 00:16:07,565 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:17:37,607 autoreload: Watching for file changes with StatReloader
+WARNING 2025-07-21 00:19:47,674 log: Not Found: /api/users/admin
+WARNING 2025-07-21 00:19:47,676 basehttp: "GET /api/users/admin HTTP/1.1" 404 7214
+WARNING 2025-07-21 00:19:48,047 log: Not Found: /favicon.ico
+WARNING 2025-07-21 00:19:48,049 basehttp: "GET /favicon.ico HTTP/1.1" 404 2358
+WARNING 2025-07-21 00:20:49,731 log: Unauthorized: /api/users/
+WARNING 2025-07-21 00:20:49,732 basehttp: "GET /api/users/ HTTP/1.1" 401 9957
+INFO 2025-07-21 00:20:50,479 basehttp: "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-21 00:20:50,482 basehttp: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-21 00:20:50,486 basehttp: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-21 00:20:50,528 basehttp: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-21 00:20:50,591 basehttp: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-21 00:20:50,608 basehttp: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-21 00:20:50,615 basehttp: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-21 00:20:50,657 basehttp: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-21 00:20:50,696 basehttp: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-21 00:20:50,712 basehttp: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-21 00:20:50,724 basehttp: "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-21 00:20:50,725 basehttp: "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-21 00:20:53,318 basehttp: "GET /api/auth/login/?next=/api/users/ HTTP/1.1" 200 2726
+INFO 2025-07-21 00:21:10,353 basehttp: "POST /api/auth/login/ HTTP/1.1" 302 0
+WARNING 2025-07-21 00:21:10,369 log: Unauthorized: /api/users/
+WARNING 2025-07-21 00:21:10,370 basehttp: "GET /api/users/ HTTP/1.1" 401 9957
+WARNING 2025-07-21 00:21:19,994 log: Unauthorized: /api/users/
+WARNING 2025-07-21 00:21:19,996 basehttp: "GET /api/users/ HTTP/1.1" 401 9957
+WARNING 2025-07-21 00:21:23,366 log: Unauthorized: /api/users/
+WARNING 2025-07-21 00:21:23,367 basehttp: "GET /api/users/ HTTP/1.1" 401 9957
+INFO 2025-07-21 00:21:30,459 basehttp: "GET /api/auth/login/?next=/api/users/ HTTP/1.1" 200 2726
+INFO 2025-07-21 00:21:44,694 basehttp: "POST /api/auth/login/ HTTP/1.1" 302 0
+WARNING 2025-07-21 00:21:44,712 log: Unauthorized: /api/users/
+WARNING 2025-07-21 00:21:44,714 basehttp: "GET /api/users/ HTTP/1.1" 401 9957
+WARNING 2025-07-21 00:27:11,160 log: Method Not Allowed: /api/token/
+WARNING 2025-07-21 00:27:11,162 basehttp: "GET /api/token/ HTTP/1.1" 405 49
+WARNING 2025-07-21 00:27:27,475 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:27:27,476 basehttp: "POST /api/token/ HTTP/1.1" 400 83
+WARNING 2025-07-21 00:27:45,416 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:27:45,417 basehttp: "POST /api/token/ HTTP/1.1" 400 83
+WARNING 2025-07-21 00:32:11,579 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:32:11,580 basehttp: "POST /api/token/ HTTP/1.1" 400 70
+WARNING 2025-07-21 00:35:09,983 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:35:09,992 basehttp: "POST /api/token/ HTTP/1.1" 400 83
+WARNING 2025-07-21 00:36:13,646 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:36:13,647 basehttp: "POST /api/token/ HTTP/1.1" 400 71
+WARNING 2025-07-21 00:36:32,640 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:36:32,640 basehttp: "POST /api/token/ HTTP/1.1" 400 71
+WARNING 2025-07-21 00:36:52,296 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:36:52,297 basehttp: "POST /api/token/ HTTP/1.1" 400 74
+WARNING 2025-07-21 00:37:09,889 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:37:09,890 basehttp: "POST /api/token/ HTTP/1.1" 400 74
+WARNING 2025-07-21 00:37:15,725 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:37:15,726 basehttp: "POST /api/token/ HTTP/1.1" 400 74
+WARNING 2025-07-21 00:37:27,921 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:37:27,922 basehttp: "POST /api/token/ HTTP/1.1" 400 74
+WARNING 2025-07-21 00:37:59,076 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:37:59,077 basehttp: "POST /api/token/ HTTP/1.1" 400 83
+WARNING 2025-07-21 00:39:54,935 log: Bad Request: /api/token/
+WARNING 2025-07-21 00:39:54,937 basehttp: "POST /api/token/ HTTP/1.1" 400 82
+INFO 2025-07-21 00:40:09,666 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:43:18,360 basehttp: "GET /api/users/ HTTP/1.1" 200 111
+INFO 2025-07-21 00:45:18,246 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:45:28,228 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:46:38,880 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 00:46:38,972 basehttp: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-07-21 00:46:38,974 basehttp: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-21 00:46:38,974 basehttp: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-21 00:46:38,982 basehttp: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-07-21 00:46:39,003 basehttp: "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-07-21 00:46:39,021 basehttp: "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-07-21 00:46:39,107 basehttp: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-07-21 00:46:39,107 basehttp: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-21 00:46:39,207 basehttp: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-07-21 00:46:45,923 basehttp: "POST /admin/logout/ HTTP/1.1" 200 3645
+INFO 2025-07-21 00:46:49,411 basehttp: "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 00:46:49,510 basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4248
+INFO 2025-07-21 00:46:49,595 basehttp: "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-07-21 00:47:16,151 basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 00:47:16,269 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 00:47:53,000 basehttp: "GET /admin/auth/group/ HTTP/1.1" 200 7516
+INFO 2025-07-21 00:47:53,103 basehttp: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-07-21 00:47:53,168 basehttp: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-07-21 00:47:53,183 basehttp: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-21 00:47:53,214 basehttp: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-07-21 00:47:53,234 basehttp: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-21 00:47:53,291 basehttp: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-21 00:47:53,295 basehttp: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-21 00:47:53,352 basehttp: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-21 00:47:53,404 basehttp: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-21 00:47:53,527 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:47:53,571 basehttp: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-07-21 00:47:53,583 basehttp: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-21 00:47:53,634 basehttp: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-07-21 00:48:01,428 basehttp: "GET /admin/auth/group/add/ HTTP/1.1" 200 12674
+INFO 2025-07-21 00:48:01,535 basehttp: "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-07-21 00:48:01,538 basehttp: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-07-21 00:48:01,551 basehttp: "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-07-21 00:48:01,586 basehttp: "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-07-21 00:48:01,601 basehttp: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-07-21 00:48:01,634 basehttp: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-07-21 00:48:01,689 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:48:01,794 basehttp: "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-07-21 00:48:45,740 basehttp: "POST /admin/auth/group/add/ HTTP/1.1" 200 13297
+INFO 2025-07-21 00:48:45,920 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:48:59,481 basehttp: "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2025-07-21 00:48:59,668 basehttp: "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13549
+INFO 2025-07-21 00:48:59,903 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:48:59,981 basehttp: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-07-21 00:49:10,619 basehttp: "POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO 2025-07-21 00:49:10,794 basehttp: "GET /admin/auth/group/ HTTP/1.1" 200 9057
+INFO 2025-07-21 00:49:11,090 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:49:21,732 basehttp: "GET /admin/auth/ HTTP/1.1" 200 5673
+INFO 2025-07-21 00:49:24,618 basehttp: "GET /admin/ HTTP/1.1" 200 6378
+INFO 2025-07-21 00:49:30,008 basehttp: "GET /admin/auth/group/ HTTP/1.1" 200 8847
+INFO 2025-07-21 00:49:30,214 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:49:35,106 basehttp: "GET /admin/auth/group/1/change/ HTTP/1.1" 200 13295
+INFO 2025-07-21 00:49:35,296 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:49:39,094 basehttp: "GET /admin/auth/group/1/delete/ HTTP/1.1" 200 10186
+INFO 2025-07-21 00:49:39,266 basehttp: "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-07-21 00:49:46,614 basehttp: "POST /admin/auth/group/1/delete/ HTTP/1.1" 302 0
+INFO 2025-07-21 00:49:46,736 basehttp: "GET /admin/auth/group/ HTTP/1.1" 200 7685
+INFO 2025-07-21 00:49:46,942 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:49:51,016 basehttp: "GET /admin/ HTTP/1.1" 200 6683
+INFO 2025-07-21 00:49:51,228 basehttp: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-07-21 00:49:55,892 basehttp: "GET /admin/ HTTP/1.1" 200 6683
+INFO 2025-07-21 00:49:57,217 basehttp: "GET /admin/ HTTP/1.1" 200 6683
+INFO 2025-07-21 00:49:57,544 basehttp: "GET /admin/ HTTP/1.1" 200 6683
+WARNING 2025-07-21 00:50:47,437 log: Unauthorized: /api/users/
+WARNING 2025-07-21 00:50:47,438 basehttp: "GET /api/users/ HTTP/1.1" 401 172
+INFO 2025-07-21 00:51:01,936 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:51:19,044 basehttp: "GET /api/users/ HTTP/1.1" 200 111
+INFO 2025-07-21 00:51:25,410 basehttp: "GET /admin/auth/group/1/change/ HTTP/1.1" 302 0
+INFO 2025-07-21 00:51:25,523 basehttp: "GET /admin/ HTTP/1.1" 200 6880
+INFO 2025-07-21 00:51:25,666 basehttp: "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2025-07-21 00:54:44,431 basehttp: "GET /admin/auth/group/ HTTP/1.1" 200 7516
+INFO 2025-07-21 00:54:44,643 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 00:54:50,832 basehttp: "GET /admin/auth/ HTTP/1.1" 200 5673
+INFO 2025-07-21 00:54:54,212 basehttp: "GET /admin/ HTTP/1.1" 200 6683
+INFO 2025-07-21 00:56:18,286 autoreload: D:\Projects\FriendlyBanks\backend\api\models.py changed, reloading.
+INFO 2025-07-21 00:56:22,402 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 00:59:02,924 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 00:59:31,930 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 00:59:45,905 basehttp: "GET /api/users/ HTTP/1.1" 200 111
+INFO 2025-07-21 01:00:00,636 basehttp: "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 01:00:00,887 basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4248
+INFO 2025-07-21 01:00:05,264 basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 01:00:05,487 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 01:00:25,442 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 01:00:28,400 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 01:00:32,017 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 01:00:38,307 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 01:05:28,710 basehttp: "OPTIONS /api/signup/ HTTP/1.1" 200 0
+INFO 2025-07-21 01:05:35,620 email_service: Email de vérification envoyé à frankkoussie@outlook.fr
+INFO 2025-07-21 01:05:35,623 auth_views: Nouvel utilisateur créé: frankkoussie@outlook.fr
+INFO 2025-07-21 01:05:35,635 basehttp: "POST /api/signup/ HTTP/1.1" 201 145
+INFO 2025-07-21 01:11:56,397 basehttp: - Broken pipe from ('172.30.240.1', 50788)
+INFO 2025-07-21 01:29:36,408 basehttp: "OPTIONS /api/resend-verification/ HTTP/1.1" 200 0
+INFO 2025-07-21 01:29:40,832 email_service: Email de vérification envoyé à frankkoussie@outlook.fr
+INFO 2025-07-21 01:29:40,833 auth_views: Nouveau code envoyé à: frankkoussie@outlook.fr
+INFO 2025-07-21 01:29:40,836 basehttp: "POST /api/resend-verification/ HTTP/1.1" 200 78
+INFO 2025-07-21 01:30:45,372 email_service: Email de bienvenue envoyé à frankkoussie@outlook.fr
+INFO 2025-07-21 01:30:45,372 auth_views: Email vérifié pour l'utilisateur: frankkoussie@outlook.fr
+INFO 2025-07-21 01:30:45,376 basehttp: "POST /api/verify-email/ HTTP/1.1" 200 205
+INFO 2025-07-21 01:30:54,145 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 01:30:54,233 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 01:31:01,144 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 01:31:01,286 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 01:31:13,464 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 01:31:18,245 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 01:31:25,534 basehttp: "GET /admin/auth/group/add/ HTTP/1.1" 200 12674
+INFO 2025-07-21 01:31:25,780 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 01:31:34,920 basehttp: "GET /admin/auth/group/add/ HTTP/1.1" 200 12674
+INFO 2025-07-21 01:31:35,118 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 01:31:57,044 basehttp: "GET /admin/auth/group/ HTTP/1.1" 200 7516
+INFO 2025-07-21 01:31:57,260 basehttp: "GET /admin/jsi18n/ HTTP/1.1" 200 8634
+INFO 2025-07-21 01:34:25,585 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 01:34:48,122 basehttp: "GET /admin/auth/ HTTP/1.1" 200 5673
+INFO 2025-07-21 01:34:56,981 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+WARNING 2025-07-21 01:35:01,555 log: Not Found: /
+WARNING 2025-07-21 01:35:01,556 basehttp: "GET / HTTP/1.1" 404 2307
+INFO 2025-07-21 01:35:06,438 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 01:35:56,018 basehttp: "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 01:35:56,031 basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4248
+WARNING 2025-07-21 01:36:39,876 log: Unauthorized: /api/user/profile/
+WARNING 2025-07-21 01:36:39,886 basehttp: "GET /api/user/profile/ HTTP/1.1" 401 172
+WARNING 2025-07-21 01:36:39,909 log: Unauthorized: /api/user/profile/
+INFO 2025-07-21 01:36:39,913 basehttp: "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+WARNING 2025-07-21 01:36:39,920 basehttp: "GET /api/user/profile/ HTTP/1.1" 401 172
+INFO 2025-07-21 01:36:40,094 basehttp: "POST /api/token/refresh/ HTTP/1.1" 200 241
+INFO 2025-07-21 01:36:40,105 basehttp: "POST /api/token/refresh/ HTTP/1.1" 200 241
+INFO 2025-07-21 01:36:40,256 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 01:36:40,494 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 01:36:46,910 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 01:36:47,005 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+WARNING 2025-07-21 01:37:56,500 log: Forbidden (CSRF token missing.): /admin/
+WARNING 2025-07-21 01:37:56,502 basehttp: "PUT /admin/ HTTP/1.1" 403 2514
+WARNING 2025-07-21 01:38:09,007 log: Forbidden (CSRF token missing.): /admin/
+WARNING 2025-07-21 01:38:09,008 basehttp: "POST /admin/ HTTP/1.1" 403 2514
+INFO 2025-07-21 01:38:46,917 basehttp: "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 01:38:46,929 basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4248
+INFO 2025-07-21 02:02:44,201 basehttp: - Broken pipe from ('172.30.240.1', 58891)
+INFO 2025-07-21 02:02:44,201 basehttp: - Broken pipe from ('172.30.240.1', 58924)
+INFO 2025-07-21 02:23:29,704 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:26:55,923 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 02:27:12,826 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:27:31,683 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:27:31,929 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:27:32,136 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:27:32,330 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:36:54,791 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:36:57,412 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:36:57,602 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:36:57,785 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:36:58,034 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:41:35,240 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 02:41:57,256 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:42:00,207 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 02:42:00,220 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:42:00,438 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 02:42:24,210 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:42:28,159 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 02:42:28,175 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-07-21 02:42:28,373 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 02:42:56,959 basehttp: - Broken pipe from ('172.30.240.1', 52980)
+INFO 2025-07-21 02:42:56,961 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 02:44:05,687 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 02:44:05,826 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 02:58:13,801 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 02:58:13,930 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 03:01:59,987 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:02:00,206 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 03:17:25,702 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 03:17:25,714 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+WARNING 2025-07-21 03:17:26,301 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:17:26,308 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:17:26,324 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:17:26,325 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 03:17:32,720 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:17:32,891 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 03:17:37,784 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:17:37,931 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:17:51,932 basehttp: "OPTIONS /api/members/create-with-credentials/ HTTP/1.1" 200 0
+ERROR 2025-07-21 03:17:54,175 generic_views: Erreur lors de la création du membre: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « api_user_username_key »
+DETAIL:  La clé « (username)=(frankkoussie@outlook.fr) » existe déjà.
+
+ERROR 2025-07-21 03:17:54,179 log: Internal Server Error: /api/members/create-with-credentials/
+ERROR 2025-07-21 03:17:54,186 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 500 37
+INFO 2025-07-21 03:17:58,196 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+ERROR 2025-07-21 03:18:06,484 generic_views: Erreur lors de la création du membre: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « api_user_username_key »
+DETAIL:  La clé « (username)=(frankkoussie@outlook.fr) » existe déjà.
+
+ERROR 2025-07-21 03:18:06,486 log: Internal Server Error: /api/members/create-with-credentials/
+ERROR 2025-07-21 03:18:06,491 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 500 37
+INFO 2025-07-21 03:18:12,449 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:18:12,544 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 03:18:14,493 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 03:18:14,504 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 03:18:14,605 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:18:14,718 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:18:42,798 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:18:57,368 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 201 352
+INFO 2025-07-21 03:18:57,488 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+ERROR 2025-07-21 03:19:21,631 generic_views: Erreur lors de la création du membre: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « api_user_username_key »
+DETAIL:  La clé « (username)=(novaltiscorp@gmail.com) » existe déjà.
+
+ERROR 2025-07-21 03:19:21,632 log: Internal Server Error: /api/members/create-with-credentials/
+ERROR 2025-07-21 03:19:21,635 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 500 37
+INFO 2025-07-21 03:19:23,724 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+INFO 2025-07-21 03:20:29,771 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:20:29,863 basehttp: "GET /api/users/ HTTP/1.1" 200 385
+INFO 2025-07-21 03:20:34,070 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+INFO 2025-07-21 03:20:34,185 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+INFO 2025-07-21 03:20:46,447 basehttp: "OPTIONS /api/members/2/ HTTP/1.1" 200 0
+WARNING 2025-07-21 03:20:46,644 log: Not Found: /api/members/2/
+WARNING 2025-07-21 03:20:46,645 basehttp: "DELETE /api/members/2/ HTTP/1.1" 404 7214
+INFO 2025-07-21 03:20:48,505 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+WARNING 2025-07-21 03:21:01,736 log: Not Found: /api/members/2/
+WARNING 2025-07-21 03:21:01,737 basehttp: "DELETE /api/members/2/ HTTP/1.1" 404 7214
+INFO 2025-07-21 03:21:10,539 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+ERROR 2025-07-21 03:21:18,528 generic_views: Erreur lors de la création du membre: ERREUR:  la valeur d'une clé dupliquée rompt la contrainte unique « api_user_username_key »
+DETAIL:  La clé « (username)=(novaltiscorp@gmail.com) » existe déjà.
+
+ERROR 2025-07-21 03:21:18,529 log: Internal Server Error: /api/members/create-with-credentials/
+ERROR 2025-07-21 03:21:18,531 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 500 37
+INFO 2025-07-21 03:26:48,838 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-07-21 03:26:54,646 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 03:27:19,277 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-07-21 03:27:25,462 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 03:39:17,218 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-07-21 03:39:21,597 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 03:40:02,772 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:40:02,867 basehttp: "GET /api/users/ HTTP/1.1" 200 385
+INFO 2025-07-21 03:40:07,205 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:40:07,303 basehttp: "GET /api/users/ HTTP/1.1" 200 385
+INFO 2025-07-21 03:40:10,182 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+INFO 2025-07-21 03:40:10,345 basehttp: "GET /api/members/ HTTP/1.1" 200 373
+INFO 2025-07-21 03:40:14,595 generic_views: Membre None et utilisateur novaltiscorp@gmail.com supprimés avec succès
+INFO 2025-07-21 03:40:14,597 basehttp: "DELETE /api/members/2/ HTTP/1.1" 200 43
+INFO 2025-07-21 03:40:14,705 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:44:24,746 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-07-21 03:44:31,398 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 03:47:22,907 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-07-21 03:47:27,060 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 03:47:44,921 autoreload: D:\Projects\FriendlyBanks\backend\api\views\__init__.py changed, reloading.
+INFO 2025-07-21 03:47:47,998 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 03:47:57,720 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:47:57,885 basehttp: "GET /api/users/ HTTP/1.1" 200 250
+INFO 2025-07-21 03:48:00,789 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:48:00,891 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:48:04,931 basehttp: "GET /api/members/ HTTP/1.1" 200 189
+INFO 2025-07-21 03:48:12,240 basehttp: "OPTIONS /api/members/1/update-role/ HTTP/1.1" 200 0
+INFO 2025-07-21 03:48:12,448 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: president
+INFO 2025-07-21 03:48:12,451 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 245
+INFO 2025-07-21 03:48:12,552 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-07-21 03:48:20,928 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:48:20,930 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:48:20,941 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:48:20,943 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:48:23,477 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:48:23,501 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:48:23,512 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:48:23,513 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 03:48:26,699 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:48:26,796 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 03:48:28,525 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:48:28,618 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:49:06,571 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+WARNING 2025-07-21 03:49:06,968 log: Not Found: /favicon.ico
+WARNING 2025-07-21 03:49:06,969 basehttp: "GET /favicon.ico HTTP/1.1" 404 2358
+INFO 2025-07-21 03:49:13,228 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 03:49:31,263 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 03:49:33,874 basehttp: "POST /admin/logout/ HTTP/1.1" 200 3645
+INFO 2025-07-21 03:49:45,221 basehttp: "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 03:49:45,406 basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4248
+INFO 2025-07-21 03:49:59,344 basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4511
+INFO 2025-07-21 03:50:21,620 basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4494
+WARNING 2025-07-21 03:57:12,083 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:57:12,084 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:57:12,091 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:57:12,092 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:57:23,537 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:57:23,543 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 03:57:33,430 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:57:33,540 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 03:57:40,106 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:57:40,215 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:57:50,145 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:57:50,269 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:06,231 basehttp: "OPTIONS /api/members/1/update-role/ HTTP/1.1" 200 0
+WARNING 2025-07-21 03:58:06,501 log: Forbidden: /api/members/1/update-role/
+WARNING 2025-07-21 03:58:06,502 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 403 29
+INFO 2025-07-21 03:58:10,906 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-07-21 03:58:21,046 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:58:21,057 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 03:58:21,063 log: Unauthorized: /api/members/
+WARNING 2025-07-21 03:58:21,065 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 03:58:26,648 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:58:26,848 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 03:58:30,012 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:30,156 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:40,888 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:41,002 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:46,306 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: treasurer
+INFO 2025-07-21 03:58:46,309 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 245
+INFO 2025-07-21 03:58:46,411 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:51,850 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:52,047 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:54,519 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:58:54,613 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 03:58:56,221 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:58:56,416 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 03:59:28,595 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: accountant
+INFO 2025-07-21 03:59:28,598 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 246
+INFO 2025-07-21 03:59:28,722 basehttp: "GET /api/members/ HTTP/1.1" 200 193
+INFO 2025-07-21 03:59:37,489 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 03:59:37,684 basehttp: "GET /api/users/ HTTP/1.1" 200 254
+INFO 2025-07-21 03:59:39,556 basehttp: "GET /api/members/ HTTP/1.1" 200 193
+INFO 2025-07-21 03:59:39,665 basehttp: "GET /api/members/ HTTP/1.1" 200 193
+INFO 2025-07-21 03:59:51,220 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 03:59:51,220 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 03:59:51,356 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 03:59:51,465 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 03:59:53,016 basehttp: "GET /api/members/ HTTP/1.1" 200 193
+INFO 2025-07-21 03:59:53,115 basehttp: "GET /api/members/ HTTP/1.1" 200 193
+INFO 2025-07-21 04:00:24,648 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: censeur
+INFO 2025-07-21 04:00:24,650 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 243
+INFO 2025-07-21 04:00:24,771 basehttp: "GET /api/members/ HTTP/1.1" 200 190
+INFO 2025-07-21 04:00:34,646 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 04:00:34,741 basehttp: "GET /api/users/ HTTP/1.1" 200 251
+INFO 2025-07-21 04:00:36,954 basehttp: "GET /api/members/ HTTP/1.1" 200 190
+INFO 2025-07-21 04:00:37,061 basehttp: "GET /api/members/ HTTP/1.1" 200 190
+INFO 2025-07-21 04:00:56,670 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: president
+INFO 2025-07-21 04:00:56,673 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 245
+INFO 2025-07-21 04:00:56,781 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 04:01:09,896 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 04:01:10,084 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 04:01:30,267 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: censeur
+INFO 2025-07-21 04:01:30,270 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 243
+INFO 2025-07-21 04:01:30,429 basehttp: "GET /api/members/ HTTP/1.1" 200 190
+INFO 2025-07-21 04:01:42,374 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 04:01:42,568 basehttp: "GET /api/users/ HTTP/1.1" 200 251
+INFO 2025-07-21 04:01:43,251 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 04:01:43,341 basehttp: "GET /api/users/ HTTP/1.1" 200 251
+INFO 2025-07-21 04:01:49,277 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 04:01:49,379 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-07-21 04:02:00,542 generic_views: Membre 1 mis à jour: frank Koussie - Rôle: president
+INFO 2025-07-21 04:02:00,544 basehttp: "PUT /api/members/1/update-role/ HTTP/1.1" 200 245
+INFO 2025-07-21 04:02:00,643 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 04:02:30,709 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 04:02:30,832 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 13:18:56,537 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:18:56,540 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+WARNING 2025-07-21 13:18:56,593 log: Unauthorized: /api/members/
+WARNING 2025-07-21 13:18:56,594 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 13:18:56,612 log: Unauthorized: /api/members/
+WARNING 2025-07-21 13:18:56,618 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 13:19:01,759 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:19:03,921 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 13:19:03,929 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:19:04,137 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 13:19:14,521 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 13:19:14,744 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 13:19:39,769 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:19:39,773 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:19:39,993 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 13:19:39,997 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 13:19:40,224 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 13:19:40,229 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 13:20:31,991 basehttp: "POST /api/contributions/ HTTP/1.1" 201 92
+INFO 2025-07-21 13:20:32,143 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 13:20:49,326 basehttp: "OPTIONS /api/contributions/1/ HTTP/1.1" 200 0
+WARNING 2025-07-21 13:20:49,506 log: Not Found: /api/contributions/1/
+WARNING 2025-07-21 13:20:49,508 basehttp: "DELETE /api/contributions/1/ HTTP/1.1" 404 7820
+INFO 2025-07-21 13:20:51,194 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+WARNING 2025-07-21 13:20:55,612 log: Not Found: /api/contributions/1/
+WARNING 2025-07-21 13:20:55,613 basehttp: "DELETE /api/contributions/1/ HTTP/1.1" 404 7820
+INFO 2025-07-21 13:20:57,962 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 13:22:35,764 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:22:35,766 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 13:22:36,009 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 76
+INFO 2025-07-21 13:22:36,248 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 76
+INFO 2025-07-21 13:23:38,298 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 13:23:38,305 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 13:23:38,444 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 13:23:38,467 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 14:48:17,047 basehttp: "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 14:48:17,140 basehttp: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4248
+INFO 2025-07-21 14:48:22,865 basehttp: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-21 14:48:23,038 basehttp: "GET /admin/ HTTP/1.1" 200 5660
+INFO 2025-07-21 15:41:09,221 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 15:41:11,327 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 15:41:11,334 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-07-21 15:41:11,433 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 15:41:16,417 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-07-21 15:41:16,426 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 15:41:16,440 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-07-21 15:41:16,446 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 15:41:16,562 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 15:41:16,574 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 15:41:16,741 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 15:41:16,764 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 15:41:23,279 basehttp: "OPTIONS /api/contributions/1/ HTTP/1.1" 200 0
+WARNING 2025-07-21 15:41:23,415 log: Not Found: /api/contributions/1/
+WARNING 2025-07-21 15:41:23,416 basehttp: "DELETE /api/contributions/1/ HTTP/1.1" 404 7820
+INFO 2025-07-21 15:41:24,711 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 15:43:54,522 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 15:43:54,585 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 15:43:54,690 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 15:43:54,740 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:23:23,726 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-07-21 16:23:31,686 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 16:23:55,967 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-07-21 16:23:58,596 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 16:24:05,977 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 16:24:06,165 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 16:24:09,562 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 16:24:09,590 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:24:09,785 basehttp: "GET /api/contributions/ HTTP/1.1" 200 94
+INFO 2025-07-21 16:24:09,836 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:24:13,097 generic_views: Contribution 1 supprimée - 0 points retirés du membre 1
+INFO 2025-07-21 16:24:13,102 basehttp: "DELETE /api/contributions/1/ HTTP/1.1" 204 50
+INFO 2025-07-21 16:24:13,209 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+WARNING 2025-07-21 16:30:03,877 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:03,957 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:03,958 log: Unauthorized: /api/members/
+WARNING 2025-07-21 16:30:04,084 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:04,098 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:04,093 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:04,152 log: Unauthorized: /api/members/
+WARNING 2025-07-21 16:30:04,277 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:06,033 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:06,038 log: Unauthorized: /api/members/
+WARNING 2025-07-21 16:30:06,048 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:06,100 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:06,116 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:06,129 log: Unauthorized: /api/members/
+WARNING 2025-07-21 16:30:06,138 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:06,142 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:07,365 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:07,367 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:07,965 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:07,979 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:08,468 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:08,515 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:08,815 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:08,818 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:08,987 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:08,993 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:09,188 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:09,191 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:09,361 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 16:30:09,365 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+INFO 2025-07-21 16:30:16,284 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-07-21 16:30:16,347 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+WARNING 2025-07-21 16:30:16,490 log: Unauthorized: /api/members/
+WARNING 2025-07-21 16:30:16,534 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:16,588 log: Unauthorized: /api/members/
+WARNING 2025-07-21 16:30:16,627 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 16:30:16,628 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:16,639 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 16:30:16,691 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 16:30:16,736 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+INFO 2025-07-21 16:35:19,021 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 16:35:19,156 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 16:35:22,323 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 16:35:22,326 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:35:22,493 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 16:35:22,494 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:35:26,325 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:35:26,424 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 2
+INFO 2025-07-21 16:35:26,461 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:35:26,547 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 2
+INFO 2025-07-21 16:35:54,278 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:35:54,383 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 16:36:03,706 basehttp: "OPTIONS /api/members/create-with-credentials/ HTTP/1.1" 200 0
+INFO 2025-07-21 16:36:05,451 generic_views: Nouveau membre créé: novaltiscorp@gmail.com avec mot de passe: NYnFfVJD
+INFO 2025-07-21 16:36:05,454 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 201 352
+INFO 2025-07-21 16:36:05,565 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 16:36:25,670 generic_views: Nouveau membre créé: noviuddddnk@gmail.com avec mot de passe: 3FqxQRoE
+INFO 2025-07-21 16:36:25,672 basehttp: "POST /api/members/create-with-credentials/ HTTP/1.1" 201 354
+INFO 2025-07-21 16:36:25,879 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 16:36:30,567 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 2
+INFO 2025-07-21 16:36:30,591 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 16:36:30,711 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 2
+INFO 2025-07-21 16:36:30,740 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 16:36:51,171 basehttp: "POST /api/loan-requests/ HTTP/1.1" 201 182
+INFO 2025-07-21 16:36:51,319 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 184
+INFO 2025-07-21 16:37:00,020 basehttp: "OPTIONS /api/loan-requests/1/ HTTP/1.1" 200 0
+WARNING 2025-07-21 16:37:00,152 log: Not Found: /api/loan-requests/1/
+WARNING 2025-07-21 16:37:00,153 basehttp: "PATCH /api/loan-requests/1/ HTTP/1.1" 404 8113
+WARNING 2025-07-21 16:37:05,176 log: Not Found: /api/loan-requests/1/
+WARNING 2025-07-21 16:37:05,177 basehttp: "PATCH /api/loan-requests/1/ HTTP/1.1" 404 8113
+INFO 2025-07-21 17:02:47,351 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-07-21 17:02:52,478 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 17:03:58,115 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-07-21 17:04:00,569 autoreload: Watching for file changes with StatReloader
+WARNING 2025-07-21 17:05:06,000 log: Unauthorized: /api/loan-requests/1/
+WARNING 2025-07-21 17:05:06,022 basehttp: "PATCH /api/loan-requests/1/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:05:09,508 log: Unauthorized: /api/loan-requests/1/
+WARNING 2025-07-21 17:05:09,510 basehttp: "PATCH /api/loan-requests/1/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:05:20,454 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 17:05:20,459 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:05:20,468 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 17:05:20,479 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:05:20,493 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:05:20,499 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:05:20,513 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:05:20,527 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 17:05:24,812 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 17:05:24,907 basehttp: "GET /api/users/ HTTP/1.1" 200 525
+INFO 2025-07-21 17:05:27,018 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 17:05:27,154 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 184
+INFO 2025-07-21 17:05:27,162 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 17:05:27,323 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 184
+INFO 2025-07-21 17:05:28,744 generic_views: Demande de prêt 1 - Statut changé vers: rejected
+INFO 2025-07-21 17:05:28,755 basehttp: "PATCH /api/loan-requests/1/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:05:28,862 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 185
+INFO 2025-07-21 17:05:42,965 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 17:05:43,078 basehttp: "GET /api/members/ HTTP/1.1" 200 562
+INFO 2025-07-21 17:06:56,647 basehttp: "OPTIONS /api/members/4/ HTTP/1.1" 200 0
+INFO 2025-07-21 17:06:56,906 generic_views: Membre None et utilisateur noviuddddnk@gmail.com supprimés avec succès
+INFO 2025-07-21 17:06:56,908 basehttp: "DELETE /api/members/4/ HTTP/1.1" 200 43
+INFO 2025-07-21 17:06:57,015 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:07:01,701 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:07:01,737 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:07:01,839 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:07:01,865 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:14:58,740 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-07-21 17:14:58,742 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+WARNING 2025-07-21 17:14:58,751 log: Unauthorized: /api/user/profile/
+WARNING 2025-07-21 17:14:58,752 basehttp: "GET /api/user/profile/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:14:58,761 log: Unauthorized: /api/user/profile/
+WARNING 2025-07-21 17:14:58,763 basehttp: "GET /api/user/profile/ HTTP/1.1" 401 172
+INFO 2025-07-21 17:14:58,769 basehttp: "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2025-07-21 17:14:58,903 basehttp: "POST /api/token/refresh/ HTTP/1.1" 200 241
+INFO 2025-07-21 17:14:59,017 basehttp: "POST /api/token/refresh/ HTTP/1.1" 200 241
+INFO 2025-07-21 17:14:59,037 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 76
+INFO 2025-07-21 17:14:59,137 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 76
+WARNING 2025-07-21 17:15:14,765 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:14,768 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:14,772 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:14,790 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:14,807 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:14,821 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:14,822 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:14,828 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:15,774 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 17:15:15,779 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:15,788 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:15,792 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:15,813 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:15,821 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 17:15:15,822 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:15,823 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:16,614 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:16,621 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:16,622 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:16,627 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:16,641 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:16,643 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:16,644 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:16,645 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:18,407 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:18,408 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:19,278 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:19,279 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:19,823 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:19,824 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:20,623 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:20,624 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:20,831 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:20,832 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:21,072 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:21,073 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:21,791 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:21,798 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:23,239 log: Unauthorized: /api/contributions/
+WARNING 2025-07-21 17:15:23,240 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:24,639 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 17:15:24,644 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:24,645 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:24,648 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:24,663 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 17:15:24,666 log: Unauthorized: /api/members/
+WARNING 2025-07-21 17:15:24,668 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 17:15:24,670 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-07-21 17:15:38,459 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-07-21 17:15:41,952 autoreload: Watching for file changes with StatReloader
+INFO 2025-07-21 17:15:43,606 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:43,619 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:15:43,769 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:15:43,833 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:48,025 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 17:15:48,233 basehttp: "GET /api/users/ HTTP/1.1" 200 388
+INFO 2025-07-21 17:15:50,433 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:50,537 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:51,729 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:51,733 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 17:15:51,887 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 17:15:51,913 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:53,323 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:15:53,329 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:53,470 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:15:53,479 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:57,363 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:57,363 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:15:57,529 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:15:57,539 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 183
+INFO 2025-07-21 17:16:05,401 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:16:05,596 basehttp: "GET /api/members/ HTTP/1.1" 200 376
+INFO 2025-07-21 17:16:11,000 basehttp: "OPTIONS /api/members/3/ HTTP/1.1" 200 0
+INFO 2025-07-21 17:16:11,185 generic_views: Membre None et utilisateur novaltiscorp@gmail.com supprimés avec succès
+INFO 2025-07-21 17:16:11,187 basehttp: "DELETE /api/members/3/ HTTP/1.1" 200 43
+INFO 2025-07-21 17:16:11,309 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 17:16:15,243 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 17:16:15,251 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-07-21 17:16:15,381 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 17:16:15,401 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-07-21 18:04:23,288 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+INFO 2025-07-21 18:04:23,303 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-07-21 18:04:23,305 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+WARNING 2025-07-21 18:04:23,314 log: Unauthorized: /api/loan-requests/
+INFO 2025-07-21 18:04:23,316 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+WARNING 2025-07-21 18:04:23,415 log: Unauthorized: /api/members/
+WARNING 2025-07-21 18:04:23,417 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 18:04:23,418 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 18:04:23,427 log: Unauthorized: /api/loan-requests/
+WARNING 2025-07-21 18:04:23,428 log: Unauthorized: /api/members/
+WARNING 2025-07-21 18:04:23,430 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-07-21 18:04:23,431 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-07-21 18:04:23,480 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:04:23,482 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-07-21 18:04:23,496 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:04:23,497 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-07-21 18:04:28,451 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-07-21 18:04:30,541 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 18:04:30,556 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-07-21 18:04:30,677 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 18:04:32,693 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:32,837 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:33,882 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-07-21 18:04:33,882 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-07-21 18:04:34,027 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:34,056 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 18:04:34,203 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:34,223 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+WARNING 2025-07-21 18:04:35,383 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:04:35,388 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-07-21 18:04:35,414 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:04:35,418 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-07-21 18:04:35,533 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:35,547 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-07-21 18:04:35,755 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:35,781 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+WARNING 2025-07-21 18:04:46,032 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:04:46,047 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-07-21 18:04:46,077 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:04:46,129 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-07-21 18:04:46,290 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:46,357 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-07-21 18:04:46,502 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:04:46,584 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-07-21 18:05:00,615 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-07-21 18:05:00,707 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-07-21 18:05:02,397 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:05:02,515 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:05:03,471 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:05:03,481 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-07-21 18:05:03,747 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:05:03,777 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+WARNING 2025-07-21 18:05:05,369 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:05:05,373 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-07-21 18:05:05,394 log: Not Found: /api/loan-repayments/
+WARNING 2025-07-21 18:05:05,402 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-07-21 18:05:05,529 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:05:05,545 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-07-21 18:05:05,744 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-07-21 18:05:05,745 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 14:54:20,459 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 15:29:23,489 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 15:31:38,188 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 15:37:13,752 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 15:45:29,177 autoreload: Watching for file changes with StatReloader
+WARNING 2025-08-09 15:51:30,374 log: Not Found: /
+WARNING 2025-08-09 15:51:30,401 basehttp: "GET / HTTP/1.1" 404 2304
+WARNING 2025-08-09 15:51:30,801 log: Not Found: /favicon.ico
+WARNING 2025-08-09 15:51:30,824 basehttp: "GET /favicon.ico HTTP/1.1" 404 2355
+INFO 2025-08-09 15:52:15,003 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 16:02:42,813 autoreload: Watching for file changes with StatReloader
+WARNING 2025-08-09 16:03:21,820 log: Not Found: /api/
+WARNING 2025-08-09 16:03:21,822 basehttp: "GET /api/ HTTP/1.1" 404 8356
+WARNING 2025-08-09 16:03:22,310 log: Not Found: /favicon.ico
+WARNING 2025-08-09 16:03:22,311 basehttp: "GET /favicon.ico HTTP/1.1" 404 2358
+INFO 2025-08-09 16:03:38,481 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+WARNING 2025-08-09 16:03:57,037 log: Unauthorized: /api/users/
+WARNING 2025-08-09 16:03:57,037 basehttp: "GET /api/users/ HTTP/1.1" 401 172
+WARNING 2025-08-09 16:04:20,056 log: Not Found: /api/
+WARNING 2025-08-09 16:04:20,057 basehttp: "POST /api/ HTTP/1.1" 404 8357
+INFO 2025-08-09 16:05:57,894 basehttp: - Broken pipe from ('172.30.240.1', 59697)
+WARNING 2025-08-09 16:10:53,406 log: Not Found: /api/
+WARNING 2025-08-09 16:10:53,410 basehttp: "GET /api/ HTTP/1.1" 404 8356
+WARNING 2025-08-09 16:11:19,167 log: Bad Request: /api/token/
+WARNING 2025-08-09 16:11:19,168 basehttp: "POST /api/token/ HTTP/1.1" 400 83
+INFO 2025-08-09 16:11:40,421 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:11:41,939 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 16:11:41,957 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:11:42,161 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 16:11:48,281 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:11:48,292 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:11:48,293 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:11:48,304 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:11:48,304 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+WARNING 2025-08-09 16:11:48,332 log: Not Found: /api/loan-repayments/
+INFO 2025-08-09 16:11:48,333 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+WARNING 2025-08-09 16:11:48,334 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 16:11:48,356 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 16:11:48,357 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 16:11:48,546 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 16:11:48,657 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 16:11:48,724 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 16:11:48,865 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 16:15:04,507 basehttp: - Broken pipe from ('172.30.240.1', 55474)
+INFO 2025-08-09 16:15:04,508 basehttp: - Broken pipe from ('172.30.240.1', 55476)
+INFO 2025-08-09 16:15:04,508 basehttp: - Broken pipe from ('172.30.240.1', 55470)
+INFO 2025-08-09 16:15:04,508 basehttp: - Broken pipe from ('172.30.240.1', 55473)
+INFO 2025-08-09 16:15:04,509 basehttp: - Broken pipe from ('172.30.240.1', 55475)
+INFO 2025-08-09 16:15:04,509 basehttp: - Broken pipe from ('172.30.240.1', 55460)
+WARNING 2025-08-09 16:28:55,849 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 16:28:55,858 log: Unauthorized: /api/members/
+WARNING 2025-08-09 16:28:55,860 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 16:28:55,861 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 16:28:55,873 log: Unauthorized: /api/members/
+WARNING 2025-08-09 16:28:55,878 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 16:28:55,877 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 16:28:55,883 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 16:28:55,965 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 16:28:55,967 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 16:28:55,986 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 16:28:56,007 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 16:29:00,788 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 16:29:00,896 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 16:29:06,167 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:07,956 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 16:29:07,966 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:08,052 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 16:29:12,352 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:12,353 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:12,353 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:12,353 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:12,353 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-08-09 16:29:12,353 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+WARNING 2025-08-09 16:29:12,416 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 16:29:12,429 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 16:29:12,448 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 16:29:12,449 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 16:29:12,535 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 16:29:12,637 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 16:29:12,653 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 16:29:12,898 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+ERROR 2025-08-09 16:33:14,013 log: Invalid HTTP_HOST header: 'www.msftconnecttest.com'. You may need to add 'www.msftconnecttest.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.msftconnecttest.com'. You may need to add 'www.msftconnecttest.com' to ALLOWED_HOSTS.
+ERROR 2025-08-09 16:33:14,014 log: Invalid HTTP_HOST header: 'ipv6.msftconnecttest.com'. You may need to add 'ipv6.msftconnecttest.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ipv6.msftconnecttest.com'. You may need to add 'ipv6.msftconnecttest.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:14,019 basehttp: "GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1" 400 73075
+WARNING 2025-08-09 16:33:14,036 basehttp: "GET http://ipv6.msftconnecttest.com/connecttest.txt HTTP/1.1" 400 73101
+ERROR 2025-08-09 16:33:14,805 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:14,808 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:15,847 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:15,850 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:16,888 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:16,892 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:16,991 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:16,998 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:33:17,939 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:17,943 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:19,001 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:19,009 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:20,054 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:20,058 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:21,152 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:21,157 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:22,199 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:22,203 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:23,240 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:23,244 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:24,288 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:24,292 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:25,333 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:25,336 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:26,381 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:26,384 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:27,004 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:27,007 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:33:27,465 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:27,470 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:28,516 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:28,519 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:29,553 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:29,558 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:30,428 log: Invalid HTTP_HOST header: 'www.msftconnecttest.com'. You may need to add 'www.msftconnecttest.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.msftconnecttest.com'. You may need to add 'www.msftconnecttest.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:30,432 basehttp: "GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1" 400 73075
+ERROR 2025-08-09 16:33:30,601 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:30,605 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:31,650 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:31,653 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:32,714 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:32,717 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:33,755 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:33,760 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:34,802 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:34,807 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:35,848 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:35,851 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:35,899 log: Invalid HTTP_HOST header: 'bifrost-https-v4.gw.postman.com:443'. You may need to add 'bifrost-https-v4.gw.postman.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bifrost-https-v4.gw.postman.com:443'. You may need to add 'bifrost-https-v4.gw.postman.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:35,902 basehttp: "CONNECT bifrost-https-v4.gw.postman.com:443 HTTP/1.1" 400 73414
+ERROR 2025-08-09 16:33:35,997 log: Invalid HTTP_HOST header: 'insights-collector.newrelic.com:443'. You may need to add 'insights-collector.newrelic.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'insights-collector.newrelic.com:443'. You may need to add 'insights-collector.newrelic.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:36,000 basehttp: "CONNECT insights-collector.newrelic.com:443 HTTP/1.1" 400 73414
+ERROR 2025-08-09 16:33:36,536 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:36,540 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:33:36,899 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+ERROR 2025-08-09 16:33:37,008 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:37,009 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+WARNING 2025-08-09 16:33:37,012 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:33:38,049 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:38,053 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:39,129 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:39,137 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:40,183 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:40,186 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:40,386 log: Invalid HTTP_HOST header: 'access-point.cloudmessaging.edge.microsoft.com:443'. You may need to add 'access-point.cloudmessaging.edge.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'access-point.cloudmessaging.edge.microsoft.com:443'. You may need to add 'access-point.cloudmessaging.edge.microsoft.com' to ALLOWED_HOSTS.
+ERROR 2025-08-09 16:33:40,414 log: Invalid HTTP_HOST header: 'edge.microsoft.com:443'. You may need to add 'edge.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'edge.microsoft.com:443'. You may need to add 'edge.microsoft.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:40,415 basehttp: "CONNECT access-point.cloudmessaging.edge.microsoft.com:443 HTTP/1.1" 400 73816
+WARNING 2025-08-09 16:33:40,418 basehttp: "CONNECT edge.microsoft.com:443 HTTP/1.1" 400 73074
+ERROR 2025-08-09 16:33:41,222 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:41,226 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:42,278 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:42,283 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:43,321 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:43,324 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:44,378 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:44,382 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:45,422 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:45,425 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:46,514 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:46,523 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:47,022 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:47,027 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:33:47,577 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:47,582 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:48,626 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:48,630 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:49,570 log: Invalid HTTP_HOST header: 'bifrost-v4-global.gw.postman.com:443'. You may need to add 'bifrost-v4-global.gw.postman.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bifrost-v4-global.gw.postman.com:443'. You may need to add 'bifrost-v4-global.gw.postman.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:49,576 basehttp: "CONNECT bifrost-v4-global.gw.postman.com:443 HTTP/1.1" 400 73440
+ERROR 2025-08-09 16:33:49,679 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:49,683 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:50,839 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:50,902 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:51,996 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:52,003 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:33:52,606 log: Invalid HTTP_HOST header: 'geo.prod.do.dsp.mp.microsoft.com:443'. You may need to add 'geo.prod.do.dsp.mp.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'geo.prod.do.dsp.mp.microsoft.com:443'. You may need to add 'geo.prod.do.dsp.mp.microsoft.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:52,615 basehttp: "CONNECT geo.prod.do.dsp.mp.microsoft.com:443 HTTP/1.1" 400 72882
+ERROR 2025-08-09 16:33:52,756 log: Invalid HTTP_HOST header: 'kv801.prod.do.dsp.mp.microsoft.com:443'. You may need to add 'kv801.prod.do.dsp.mp.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'kv801.prod.do.dsp.mp.microsoft.com:443'. You may need to add 'kv801.prod.do.dsp.mp.microsoft.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:33:52,811 basehttp: "CONNECT kv801.prod.do.dsp.mp.microsoft.com:443 HTTP/1.1" 400 72934
+ERROR 2025-08-09 16:33:53,100 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+ERROR 2025-08-09 16:34:06,351 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:06,354 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:06,578 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:06,584 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:34:07,054 log: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'bam.nr-data.net:443'. You may need to add 'bam.nr-data.net' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:07,058 basehttp: "CONNECT bam.nr-data.net:443 HTTP/1.1" 400 72998
+ERROR 2025-08-09 16:34:07,410 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:07,415 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:08,409 log: Invalid HTTP_HOST header: 'edge.microsoft.com:443'. You may need to add 'edge.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'edge.microsoft.com:443'. You may need to add 'edge.microsoft.com' to ALLOWED_HOSTS.
+ERROR 2025-08-09 16:34:08,428 log: Invalid HTTP_HOST header: 'access-point.cloudmessaging.edge.microsoft.com:443'. You may need to add 'access-point.cloudmessaging.edge.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'access-point.cloudmessaging.edge.microsoft.com:443'. You may need to add 'access-point.cloudmessaging.edge.microsoft.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:08,468 basehttp: "CONNECT access-point.cloudmessaging.edge.microsoft.com:443 HTTP/1.1" 400 73816
+WARNING 2025-08-09 16:34:08,443 basehttp: "CONNECT edge.microsoft.com:443 HTTP/1.1" 400 73074
+ERROR 2025-08-09 16:34:08,487 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:08,493 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:08,646 log: Invalid HTTP_HOST header: 'nexus-websocket-a.intercom.io:443'. You may need to add 'nexus-websocket-a.intercom.io' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'nexus-websocket-a.intercom.io:443'. You may need to add 'nexus-websocket-a.intercom.io' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:08,650 basehttp: "CONNECT nexus-websocket-a.intercom.io:443 HTTP/1.1" 400 73360
+ERROR 2025-08-09 16:34:09,573 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:09,597 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:10,652 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:10,656 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:11,182 log: Invalid HTTP_HOST header: 'ipv6.msftconnecttest.com'. You may need to add 'ipv6.msftconnecttest.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ipv6.msftconnecttest.com'. You may need to add 'ipv6.msftconnecttest.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:11,185 basehttp: "GET http://ipv6.msftconnecttest.com/connecttest.txt HTTP/1.1" 400 73101
+ERROR 2025-08-09 16:34:11,697 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:11,700 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:12,756 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:12,761 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:13,253 log: Invalid HTTP_HOST header: 'watson.events.data.microsoft.com:443'. You may need to add 'watson.events.data.microsoft.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'watson.events.data.microsoft.com:443'. You may need to add 'watson.events.data.microsoft.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:13,256 basehttp: "CONNECT watson.events.data.microsoft.com:443 HTTP/1.1" 400 72882
+WARNING 2025-08-09 16:34:13,613 log: Not Found: /172.30.240.1:3000
+WARNING 2025-08-09 16:34:13,614 basehttp: "CONNECT 172.30.240.1:3000 HTTP/1.1" 404 1858
+ERROR 2025-08-09 16:34:13,850 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:13,855 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:14,894 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:14,899 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:15,928 log: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'clientstream.launchdarkly.com:443'. You may need to add 'clientstream.launchdarkly.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:15,932 basehttp: "CONNECT clientstream.launchdarkly.com:443 HTTP/1.1" 400 73362
+ERROR 2025-08-09 16:34:51,535 log: Invalid HTTP_HOST header: 'www.msftconnecttest.com'. You may need to add 'www.msftconnecttest.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\utils\deprecation.py", line 119, in __call__
+    response = self.process_request(request)
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+  File "D:\Projects\FriendlyBanks\backend\venv\Lib\site-packages\django\http\request.py", line 191, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.msftconnecttest.com'. You may need to add 'www.msftconnecttest.com' to ALLOWED_HOSTS.
+WARNING 2025-08-09 16:34:51,539 basehttp: "GET http://www.msftconnecttest.com/connecttest.txt HTTP/1.1" 400 73075
+INFO 2025-08-09 17:13:08,684 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 17:13:08,831 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 17:13:11,552 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 17:13:11,673 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+WARNING 2025-08-09 17:17:48,381 log: Not Found: /api/loan-repayments/
+INFO 2025-08-09 17:17:48,388 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 17:17:48,389 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:17:48,405 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+WARNING 2025-08-09 17:17:48,418 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:17:48,429 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:17:48,548 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:17:48,610 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+WARNING 2025-08-09 17:21:32,550 log: Not Found: /api/
+WARNING 2025-08-09 17:21:32,551 basehttp: "GET /api/ HTTP/1.1" 404 8356
+WARNING 2025-08-09 17:26:10,408 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:26:10,411 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:26:10,416 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:26:10,425 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:26:10,432 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:26:10,434 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:26:10,444 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:26:10,451 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:26:10,615 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:26:10,615 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:26:10,624 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:26:10,625 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:26:15,267 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 17:26:15,380 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+WARNING 2025-08-09 17:26:18,584 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:26:18,586 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:26:18,643 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:26:18,677 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:26:18,775 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:26:18,788 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:26:18,958 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:26:18,997 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:27:09,702 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 17:27:09,807 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 17:27:12,267 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:27:12,382 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:27:15,342 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-08-09 17:27:15,342 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-08-09 17:27:15,531 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:27:15,584 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 17:27:15,712 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 17:27:15,740 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:28:01,018 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-08-09 17:28:01,021 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-08-09 17:28:01,124 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-08-09 17:28:01,222 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+WARNING 2025-08-09 17:28:04,181 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:28:04,196 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:28:04,255 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:28:04,259 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:28:04,338 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:28:04,353 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:28:04,529 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:28:04,543 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+WARNING 2025-08-09 17:29:24,297 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:29:24,331 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:29:24,417 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:29:24,420 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:29:24,484 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:24,568 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:29:24,674 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:24,800 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:29:28,322 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 17:29:28,430 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+WARNING 2025-08-09 17:29:30,288 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:29:30,292 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:29:30,338 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:29:30,344 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:29:30,435 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:29:30,435 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:30,599 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:30,623 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:29:48,724 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:48,835 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:53,139 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 17:29:53,155 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:53,352 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 17:29:53,352 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 17:29:58,026 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:29:58,037 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:29:58,078 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:29:58,100 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+INFO 2025-08-09 17:29:58,174 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:29:58,174 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 17:29:58,356 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 17:29:58,365 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 17:43:19,330 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:43:19,410 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:19,420 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:43:19,471 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:19,476 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:43:19,736 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:20,008 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:20,291 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:20,786 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:43:20,888 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:43:20,889 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:43:20,890 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:27,471 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:27,476 log: Unauthorized: /api/contributions/
+WARNING 2025-08-09 17:43:27,484 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:27,495 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:27,507 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:27,512 log: Unauthorized: /api/contributions/
+WARNING 2025-08-09 17:43:27,513 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:27,519 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+INFO 2025-08-09 17:43:28,745 basehttp: "OPTIONS /api/sanctions/ HTTP/1.1" 200 0
+INFO 2025-08-09 17:43:28,746 basehttp: "OPTIONS /api/sanctions/ HTTP/1.1" 200 0
+WARNING 2025-08-09 17:43:28,778 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:28,818 log: Not Found: /api/sanctions/
+WARNING 2025-08-09 17:43:28,821 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:28,863 basehttp: "GET /api/sanctions/ HTTP/1.1" 404 8386
+WARNING 2025-08-09 17:43:28,874 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:28,929 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:28,970 log: Not Found: /api/sanctions/
+WARNING 2025-08-09 17:43:28,976 basehttp: "GET /api/sanctions/ HTTP/1.1" 404 8386
+WARNING 2025-08-09 17:43:32,028 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:43:32,037 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:32,038 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:32,041 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:32,055 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:43:32,058 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:32,059 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:32,059 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:32,082 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:43:32,086 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:43:32,107 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:43:32,115 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:43:32,898 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:32,914 log: Not Found: /api/sanctions/
+WARNING 2025-08-09 17:43:32,915 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:32,918 basehttp: "GET /api/sanctions/ HTTP/1.1" 404 8386
+WARNING 2025-08-09 17:43:32,928 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:33,068 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:43:33,072 log: Not Found: /api/sanctions/
+WARNING 2025-08-09 17:43:33,073 basehttp: "GET /api/sanctions/ HTTP/1.1" 404 8386
+WARNING 2025-08-09 17:43:53,624 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:43:53,627 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:43:53,647 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:44:05,818 log: Unauthorized: /api/contributions/
+WARNING 2025-08-09 17:44:11,014 log: Not Found: /api/sanctions/
+WARNING 2025-08-09 17:44:13,628 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:44:34,518 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,522 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:44:34,523 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,526 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,527 basehttp: "GET /api/sanctions/ HTTP/1.1" 404 8386
+WARNING 2025-08-09 17:44:34,528 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,540 log: Unauthorized: /api/contributions/
+WARNING 2025-08-09 17:44:34,542 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,547 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,555 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:44:34,558 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:44:34,560 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,562 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,565 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:44:34,566 basehttp: "GET /api/contributions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,566 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,567 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,581 log: Unauthorized: /api/loan-requests/
+WARNING 2025-08-09 17:44:34,584 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,593 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:44:34,622 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:44:34,602 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,617 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,621 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 17:44:34,621 basehttp: "GET /api/loan-requests/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,596 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,626 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,631 log: Unauthorized: /api/members/
+WARNING 2025-08-09 17:44:34,635 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,635 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 8404
+WARNING 2025-08-09 17:44:34,643 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,662 log: Not Found: /api/sanctions/
+WARNING 2025-08-09 17:44:34,664 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 17:44:34,670 basehttp: "GET /api/sanctions/ HTTP/1.1" 404 8386
+INFO 2025-08-09 17:57:12,234 autoreload: D:\Projects\FriendlyBanks\backend\api\models.py changed, reloading.
+INFO 2025-08-09 17:57:20,579 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 17:58:58,634 autoreload: D:\Projects\FriendlyBanks\backend\api\serializers.py changed, reloading.
+INFO 2025-08-09 17:59:02,560 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:00:23,341 autoreload: D:\Projects\FriendlyBanks\backend\api\serializers.py changed, reloading.
+INFO 2025-08-09 18:00:25,695 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:02:41,108 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 18:02:44,050 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:05:32,218 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 18:05:35,117 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:06:43,204 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 18:06:46,325 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:07:37,264 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-08-09 18:07:39,708 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:08:57,393 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:12:15,784 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:12:53,700 autoreload: Watching for file changes with StatReloader
+WARNING 2025-08-09 18:13:04,812 log: Unauthorized: /api/users/
+WARNING 2025-08-09 18:13:04,814 basehttp: "GET /api/users/ HTTP/1.1" 401 10054
+INFO 2025-08-09 18:13:05,181 basehttp: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-08-09 18:13:05,194 basehttp: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-08-09 18:13:05,216 basehttp: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-08-09 18:13:05,249 basehttp: "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-08-09 18:13:05,286 basehttp: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-08-09 18:13:05,287 basehttp: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-08-09 18:13:05,352 basehttp: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-08-09 18:13:05,392 basehttp: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-08-09 18:13:05,456 basehttp: "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-08-09 18:13:05,493 basehttp: "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-08-09 18:13:05,497 basehttp: "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-08-09 18:13:05,499 basehttp: "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-08-09 18:13:13,973 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:13:14,163 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+WARNING 2025-08-09 18:13:16,824 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 18:13:16,830 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 11478
+INFO 2025-08-09 18:13:16,830 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 18:13:16,830 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 18:13:16,870 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 18:13:16,878 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 11478
+INFO 2025-08-09 18:13:16,989 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 18:13:16,990 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:13:19,425 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:13:19,437 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:13:19,554 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:13:19,572 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+WARNING 2025-08-09 18:23:31,382 log: Unauthorized: /api/sanctions/
+WARNING 2025-08-09 18:23:31,383 basehttp: "GET /api/sanctions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:23:31,389 log: Unauthorized: /api/members/
+WARNING 2025-08-09 18:23:31,392 log: Unauthorized: /api/sanctions/
+WARNING 2025-08-09 18:23:31,393 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:23:31,394 basehttp: "GET /api/sanctions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:23:31,398 log: Unauthorized: /api/members/
+WARNING 2025-08-09 18:23:31,399 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:23:38,806 log: Unauthorized: /api/sanctions/
+WARNING 2025-08-09 18:23:38,808 log: Unauthorized: /api/members/
+WARNING 2025-08-09 18:23:38,809 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:23:38,809 basehttp: "GET /api/sanctions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:24:06,152 log: Unauthorized: /api/sanctions/
+WARNING 2025-08-09 18:24:06,155 log: Unauthorized: /api/members/
+WARNING 2025-08-09 18:24:06,155 basehttp: "GET /api/sanctions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:24:06,156 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:24:11,241 log: Unauthorized: /api/sanctions/
+WARNING 2025-08-09 18:24:11,246 log: Unauthorized: /api/members/
+WARNING 2025-08-09 18:24:11,247 basehttp: "GET /api/sanctions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:24:11,250 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:24:11,257 log: Unauthorized: /api/sanctions/
+WARNING 2025-08-09 18:24:11,261 log: Unauthorized: /api/members/
+WARNING 2025-08-09 18:24:11,264 basehttp: "GET /api/sanctions/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:24:11,284 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-08-09 18:24:13,832 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:24:13,928 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 18:24:15,941 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:24:15,941 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:24:16,087 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:24:16,096 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:43,819 basehttp: "OPTIONS /api/votes/ HTTP/1.1" 200 0
+INFO 2025-08-09 18:26:43,846 basehttp: "OPTIONS /api/meetings/ HTTP/1.1" 200 0
+WARNING 2025-08-09 18:26:43,961 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:43,971 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:43,986 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:43,994 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+INFO 2025-08-09 18:26:46,213 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:46,213 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:46,369 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:46,369 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 18:26:47,882 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:47,895 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:47,896 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:47,896 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:47,914 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:47,926 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:47,927 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:47,927 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:49,559 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:49,569 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:49,570 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:49,570 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:50,202 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:50,212 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:50,213 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:50,214 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:50,414 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:50,420 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:50,421 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:50,422 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:50,596 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:50,602 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:50,603 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:50,604 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:50,787 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:50,796 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:50,797 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:50,797 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+INFO 2025-08-09 18:26:52,106 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:52,106 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:52,266 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:52,287 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 18:26:52,905 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 18:26:52,911 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 11478
+WARNING 2025-08-09 18:26:52,938 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 18:26:52,940 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 11478
+INFO 2025-08-09 18:26:53,045 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:53,082 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 18:26:53,178 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:53,217 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 18:26:54,978 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:54,985 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:55,134 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:55,137 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:56,289 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:56,314 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:26:56,462 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:26:56,511 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+WARNING 2025-08-09 18:26:57,481 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:57,495 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:57,496 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:57,496 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:57,510 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:57,519 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:57,519 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:57,520 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:26:59,380 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:26:59,386 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:26:59,387 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:26:59,388 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+INFO 2025-08-09 18:27:21,381 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:27:21,406 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:27:21,510 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:27:51,702 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:27:54,825 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:28:04,583 basehttp: - Broken pipe from ('172.30.240.1', 54908)
+INFO 2025-08-09 18:28:04,584 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:28:04,625 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 18:28:04,631 basehttp: - Broken pipe from ('172.30.240.1', 54894)
+INFO 2025-08-09 18:28:04,919 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 18:28:04,924 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 18:28:06,558 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:28:06,673 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 18:28:10,242 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:28:10,513 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+WARNING 2025-08-09 18:28:24,613 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:28:24,620 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:28:29,719 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+WARNING 2025-08-09 18:28:29,719 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:28:29,738 log: Not Found: /api/meetings/
+WARNING 2025-08-09 18:28:29,743 basehttp: "GET /api/meetings/ HTTP/1.1" 404 11457
+WARNING 2025-08-09 18:28:29,754 log: Not Found: /api/votes/
+WARNING 2025-08-09 18:28:29,755 basehttp: "GET /api/votes/ HTTP/1.1" 404 11448
+INFO 2025-08-09 18:31:24,209 autoreload: D:\Projects\FriendlyBanks\backend\api\models.py changed, reloading.
+INFO 2025-08-09 18:31:29,265 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:31:59,540 autoreload: D:\Projects\FriendlyBanks\backend\api\serializers.py changed, reloading.
+INFO 2025-08-09 18:32:02,623 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:32:47,368 autoreload: D:\Projects\FriendlyBanks\backend\api\serializers.py changed, reloading.
+INFO 2025-08-09 18:32:50,134 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:34:15,370 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 18:34:17,894 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:35:28,130 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 18:35:30,574 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:39:47,155 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 18:39:50,141 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:40:41,315 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-08-09 18:40:43,639 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:41:29,612 autoreload: D:\Projects\FriendlyBanks\backend\api\urls.py changed, reloading.
+INFO 2025-08-09 18:41:32,105 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 18:42:48,645 autoreload: Watching for file changes with StatReloader
+WARNING 2025-08-09 18:43:02,554 log: Unauthorized: /api/votes/
+WARNING 2025-08-09 18:43:02,555 log: Unauthorized: /api/meetings/
+WARNING 2025-08-09 18:43:02,556 basehttp: "GET /api/votes/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:43:02,560 basehttp: "GET /api/meetings/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:43:02,566 log: Unauthorized: /api/votes/
+WARNING 2025-08-09 18:43:02,567 log: Unauthorized: /api/meetings/
+WARNING 2025-08-09 18:43:02,568 basehttp: "GET /api/votes/ HTTP/1.1" 401 172
+WARNING 2025-08-09 18:43:02,569 basehttp: "GET /api/meetings/ HTTP/1.1" 401 172
+INFO 2025-08-09 18:43:03,786 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-08-09 18:43:05,499 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 18:43:05,507 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-08-09 18:43:05,603 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 18:43:07,512 basehttp: "GET /api/votes/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:43:07,521 basehttp: "GET /api/meetings/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:43:07,650 basehttp: "GET /api/votes/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:43:07,652 basehttp: "GET /api/meetings/ HTTP/1.1" 200 2
+INFO 2025-08-09 18:43:18,492 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-08-09 18:43:18,609 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-08-09 21:18:08,157 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 21:20:32,114 basehttp: "OPTIONS /api/dashboard-stats/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:20:32,117 basehttp: "OPTIONS /api/dashboard-stats/ HTTP/1.1" 200 0
+WARNING 2025-08-09 21:20:33,234 log: Unauthorized: /api/dashboard-stats/
+WARNING 2025-08-09 21:20:33,235 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 401 172
+WARNING 2025-08-09 21:20:33,241 log: Unauthorized: /api/dashboard-stats/
+WARNING 2025-08-09 21:20:33,242 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 401 172
+INFO 2025-08-09 21:20:47,501 basehttp: "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:20:49,301 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 21:20:49,309 basehttp: "OPTIONS /api/users/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:20:49,565 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+ERROR 2025-08-09 21:20:49,768 generic_views: Erreur lors de la récupération des stats du dashboard: name 'timezone' is not defined
+ERROR 2025-08-09 21:20:49,769 log: Internal Server Error: /api/dashboard-stats/
+ERROR 2025-08-09 21:20:49,771 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 500 38
+ERROR 2025-08-09 21:20:49,885 generic_views: Erreur lors de la récupération des stats du dashboard: name 'timezone' is not defined
+ERROR 2025-08-09 21:20:49,886 log: Internal Server Error: /api/dashboard-stats/
+ERROR 2025-08-09 21:20:49,890 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 500 38
+INFO 2025-08-09 21:20:58,744 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:20:58,744 basehttp: "OPTIONS /api/members/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:20:58,896 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:20:59,021 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+ERROR 2025-08-09 21:21:00,370 generic_views: Erreur lors de la récupération des stats du dashboard: name 'timezone' is not defined
+ERROR 2025-08-09 21:21:00,371 log: Internal Server Error: /api/dashboard-stats/
+ERROR 2025-08-09 21:21:00,374 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 500 38
+ERROR 2025-08-09 21:21:00,475 generic_views: Erreur lors de la récupération des stats du dashboard: name 'timezone' is not defined
+ERROR 2025-08-09 21:21:00,476 log: Internal Server Error: /api/dashboard-stats/
+ERROR 2025-08-09 21:21:00,477 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 500 38
+INFO 2025-08-09 21:23:47,833 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 21:23:51,083 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 21:24:14,195 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 21:24:16,657 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 21:25:40,560 autoreload: D:\Projects\FriendlyBanks\backend\api\views\generic_views.py changed, reloading.
+INFO 2025-08-09 21:25:43,210 autoreload: Watching for file changes with StatReloader
+INFO 2025-08-09 21:26:18,385 autoreload: Watching for file changes with StatReloader
+WARNING 2025-08-09 21:26:25,876 log: Unauthorized: /api/members/
+WARNING 2025-08-09 21:26:25,877 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 21:26:25,882 log: Unauthorized: /api/members/
+WARNING 2025-08-09 21:26:25,884 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 21:26:27,539 log: Unauthorized: /api/members/
+WARNING 2025-08-09 21:26:27,540 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 21:26:30,578 log: Unauthorized: /api/members/
+WARNING 2025-08-09 21:26:30,610 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+WARNING 2025-08-09 21:26:30,621 log: Unauthorized: /api/members/
+WARNING 2025-08-09 21:26:30,624 basehttp: "GET /api/members/ HTTP/1.1" 401 172
+INFO 2025-08-09 21:26:33,525 basehttp: "POST /api/token/ HTTP/1.1" 200 483
+INFO 2025-08-09 21:26:33,626 basehttp: "GET /api/users/ HTTP/1.1" 200 253
+INFO 2025-08-09 21:26:34,296 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 200 145
+INFO 2025-08-09 21:26:34,447 basehttp: "GET /api/dashboard-stats/ HTTP/1.1" 200 145
+INFO 2025-08-09 21:26:46,961 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:47,067 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:49,583 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:49,586 basehttp: "OPTIONS /api/contributions/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:49,752 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:49,758 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:49,936 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:49,937 basehttp: "GET /api/contributions/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:51,858 basehttp: "OPTIONS /api/sanctions/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:51,858 basehttp: "OPTIONS /api/sanctions/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:52,001 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:52,145 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:52,238 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:52,356 basehttp: "GET /api/sanctions/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:52,870 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:52,870 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:52,870 basehttp: "OPTIONS /api/loan-requests/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:52,873 basehttp: "OPTIONS /api/loan-repayments/ HTTP/1.1" 200 0
+WARNING 2025-08-09 21:26:53,021 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 21:26:53,022 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 15600
+WARNING 2025-08-09 21:26:53,049 log: Not Found: /api/loan-repayments/
+WARNING 2025-08-09 21:26:53,051 basehttp: "GET /api/loan-repayments/ HTTP/1.1" 404 15600
+INFO 2025-08-09 21:26:53,070 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:53,098 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 21:26:53,212 basehttp: "GET /api/members/ HTTP/1.1" 200 192
+INFO 2025-08-09 21:26:53,247 basehttp: "GET /api/loan-requests/ HTTP/1.1" 200 182
+INFO 2025-08-09 21:26:54,886 basehttp: "OPTIONS /api/meetings/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:54,886 basehttp: "OPTIONS /api/votes/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:54,887 basehttp: "OPTIONS /api/meetings/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:54,887 basehttp: "OPTIONS /api/votes/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:55,023 basehttp: "GET /api/votes/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:55,034 basehttp: "GET /api/meetings/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:55,244 basehttp: "GET /api/meetings/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:55,269 basehttp: "GET /api/votes/ HTTP/1.1" 200 2
+INFO 2025-08-09 21:26:57,615 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:57,621 basehttp: "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2025-08-09 21:26:57,730 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
+INFO 2025-08-09 21:26:57,826 basehttp: "GET /api/user/profile/ HTTP/1.1" 200 96
