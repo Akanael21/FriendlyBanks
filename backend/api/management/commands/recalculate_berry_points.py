@@ -13,30 +13,39 @@ class Command(BaseCommand):
             Member.objects.all().update(berry_score=20)
             self.stdout.write(self.style.WARNING('Scores de tous les membres réinitialisés à 20.'))
 
-            # Récupérer tous les membres pour mettre à jour leur score en mémoire
-            members = {m.id: m for m in Member.objects.all()}
-
-            # Parcourir toutes les contributions par ordre chronologique
-            contributions = Contribution.objects.all().order_by('date', 'id')
-            
-            for contrib in contributions:
-                old_points = contrib.points_berry
-                impact = contrib.calculate_impact() # Utilise la nouvelle logique du modèle
+            # Parcourir chaque membre individuellement
+            for member in Member.objects.all():
+                # Récupérer toutes les contributions de ce membre, triées par date
+                member_contributions = Contribution.objects.filter(member=member).order_by('date', 'id')
                 
-                contrib.is_late = impact['is_late']
-                contrib.points_berry = impact['points_berry']
-                contrib.save(update_fields=['is_late', 'points_berry']) # Sauvegarde sans redéclenchement de la logique `save` complète
+                # CORRECTION : On suit si on a déjà traité la première contribution
+                is_first_contribution_processed = False
+
+                for contrib in member_contributions:
+                    is_this_the_first_one = not is_first_contribution_processed
+                    
+                    # On appelle la méthode avec l'argument maintenant requis
+                    impact = contrib.calculate_impact(is_first_contribution_ever=is_this_the_first_one)
+                    
+                    # On met à jour la contribution SANS déclencher la méthode save() complète
+                    # pour éviter de recalculer le score du membre à chaque fois
+                    contrib.is_late = impact['is_late']
+                    contrib.points_berry = impact['points_berry']
+                    contrib.save(update_fields=['is_late', 'points_berry'])
+                    
+                    # On ajoute les points au score total du membre
+                    member.berry_score += contrib.points_berry
+
+                    self.stdout.write(
+                        f'Contribution #{contrib.id} (Membre #{member.id}, Première: {is_this_the_first_one}): '
+                        f'Points: {contrib.points_berry}. Score membre -> {member.berry_score}'
+                    )
+                    
+                    # On marque la première contribution comme traitée
+                    is_first_contribution_processed = True
                 
-                # Mettre à jour le score du membre en mémoire
-                member = members.get(contrib.member.id)
-                if member:
-                    # On retire l'ancienne valeur (qui était probablement 0) et on ajoute la nouvelle
-                    member.berry_score = (member.berry_score - old_points) + contrib.points_berry
-
-                self.stdout.write(f'Contribution #{contrib.id}: {old_points} pts -> {contrib.points_berry} pts. Membre #{member.id} score -> {member.berry_score}')
-
-            # Sauvegarder tous les scores membres mis à jour en une seule fois
-            for member in members.values():
+                # On sauvegarde le score final du membre une fois toutes ses contributions traitées
                 member.save(update_fields=['berry_score'])
-            
+                self.stdout.write(self.style.SUCCESS(f'Score final pour Membre #{member.id}: {member.berry_score}'))
+
             self.stdout.write(self.style.SUCCESS('Recalcul terminé avec succès !'))
