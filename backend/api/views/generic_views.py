@@ -161,7 +161,7 @@ class UserListCreateAPIView(generics.ListCreateAPIView):
 
 # NOUVELLE VERSION AVEC DÉTAIL, MISE À JOUR ET SUPPRESSION
 class MemberListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Member.objects.all()
+    queryset = Member.objects.select_related('user').all()
     serializer_class = MemberSerializer
     permission_classes = [IsAuthenticated]
 
