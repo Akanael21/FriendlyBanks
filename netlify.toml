@@ -4,8 +4,8 @@
   # Commande à exécuter pour construire le site
   command = "CI=false npm run build"
 
-  # Dossier à publier après le build
-  publish = "frontend/build"
+  # CORRECTION ICI: On enlève "frontend/" car on est déjà dedans grâce à "base"
+  publish = "build"
 
   # Dossier de base pour le build
   base = "frontend"
