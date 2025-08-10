@@ -27,7 +27,6 @@ class User(AbstractUser):
     code_generated_at = models.DateTimeField(blank=True, null=True)
     verification_attempts = models.IntegerField(default=0)
 
-    # <<< DÉBUT DE LA MÉTHODE AJOUTÉE >>>
     def save(self, *args, **kwargs):
         """
         Surcharge de la méthode save pour s'assurer qu'un superuser
@@ -97,6 +96,67 @@ class Contribution(models.Model):
 
     def __str__(self):
         return f"Contribution {self.amount} by {self.member} on {self.date}"
+
+    def calculate_impact(self):
+        """
+        Calcule les points Berry et le statut de retard pour cette contribution.
+        Retourne un dictionnaire avec les valeurs calculées.
+        """
+        from decimal import Decimal
+
+        CONTRIBUTION_DUE_DAY = 25
+        BONUS_THRESHOLD = Decimal('6800.00')
+        
+        # Déterminer si la contribution est en retard
+        is_late = self.date.day > CONTRIBUTION_DUE_DAY
+        
+        points_awarded = 0
+        
+        # Vérifier si c'est la toute première contribution du membre
+        # On vérifie s'il existe d'autres contributions pour ce membre
+        is_first_contribution = not self.member.contributions.exclude(pk=self.pk).exists()
+
+        if is_late:
+            points_awarded -= 15  # Pénalité de retard
+        else:
+            # La récompense de 5 points ne s'applique pas à la première contribution
+            if not is_first_contribution:
+                points_awarded += 5
+        
+        # Vérifier le bonus de 70%
+        if self.amount >= BONUS_THRESHOLD:
+            points_awarded += 5
+            
+        return {
+            'is_late': is_late,
+            'points_berry': points_awarded
+        }
+
+    def save(self, *args, **kwargs):
+        """
+        Surcharge de la méthode save pour calculer et appliquer automatiquement
+        l'impact sur les points Berry avant chaque sauvegarde.
+        """
+        # On garde en mémoire l'ancienne valeur des points
+        old_points = 0
+        if self.pk: # Si l'objet existe déjà en base de données
+            try:
+                old_points = Contribution.objects.get(pk=self.pk).points_berry
+            except Contribution.DoesNotExist:
+                pass # L'objet est en cours de création
+
+        # Calculer le nouvel impact
+        impact = self.calculate_impact()
+        self.is_late = impact['is_late']
+        self.points_berry = impact['points_berry']
+        
+        # Mettre à jour le score total du membre
+        # On retire d'abord l'ancienne valeur, puis on ajoute la nouvelle
+        self.member.berry_score = (self.member.berry_score - old_points) + self.points_berry
+        self.member.save()
+        
+        # Appeler la méthode save originale pour sauvegarder la contribution
+        super().save(*args, **kwargs)
 
 class LoanRequest(models.Model):
     STATUS_CHOICES = (
