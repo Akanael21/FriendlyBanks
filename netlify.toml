@@ -1,0 +1,11 @@
+# Fichier de configuration pour Netlify
+
+[build]
+  # Commande à exécuter pour construire le site
+  command = "CI=false npm run build"
+
+  # Dossier à publier après le build
+  publish = "frontend/build"
+
+  # Dossier de base pour le build
+  base = "frontend"
