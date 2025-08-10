@@ -4,8 +4,14 @@
   # Commande à exécuter pour construire le site
   command = "CI=false npm run build"
 
-  # CORRECTION ICI: On enlève "frontend/" car on est déjà dedans grâce à "base"
+  # Dossier à publier après le build
   publish = "build"
 
   # Dossier de base pour le build
   base = "frontend"
+  
+# Règle de redirection pour les applications à page unique (SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
