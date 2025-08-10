@@ -116,39 +116,42 @@ class ChangePasswordAPIView(APIView):
             )
 
 class DashboardStatsAPIView(APIView):
-    """
-    Fournit un résumé des statistiques clés pour le tableau de bord.
-    """
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
         try:
             user = request.user
-            # Utiliser select_related pour optimiser la requête
-            member = Member.objects.select_related('user').get(user=user)
             
-            # Calculs pour l'état du fonds
             today = timezone.now().date()
             total_fund_result = Contribution.objects.aggregate(total=Sum('amount'))
             monthly_contributions_result = Contribution.objects.filter(
-                date__year=today.year, 
-                date__month=today.month
+                date__year=today.year, date__month=today.month
             ).aggregate(total=Sum('amount'))
 
+            fund_status = {
+                'total_fund': total_fund_result['total'] or 0,
+                'monthly_contributions': monthly_contributions_result['total'] or 0,
+                'active_members': Member.objects.count(),
+                'loans_in_repayment': LoanRequest.objects.filter(status='approved').count(),
+                'liquidity_rate': 'Élevé',
+            }
+
+            berry_points = 0
+            # Si l'utilisateur n'est PAS un superuser, on essaie de trouver son profil membre
+            if not user.is_superuser:
+                try:
+                    member = Member.objects.get(user=user)
+                    berry_points = member.berry_score
+                except Member.DoesNotExist:
+                    # C'est normal si c'est un 'guest' par exemple
+                    pass
+
             data = {
-                'berry_points': member.berry_score,
-                'fund_status': {
-                    'total_fund': total_fund_result['total'] or 0,
-                    'monthly_contributions': monthly_contributions_result['total'] or 0,
-                    'active_members': Member.objects.count(),
-                    'loans_in_repayment': LoanRequest.objects.filter(status='approved').count(),
-                    'liquidity_rate': 'Élevé', # Logique à définir selon la charte
-                }
+                'berry_points': berry_points,
+                'fund_status': fund_status
             }
             return Response(data, status=status.HTTP_200_OK)
         
-        except Member.DoesNotExist:
-            return Response({'error': 'Profil membre non trouvé pour cet utilisateur.'}, status=status.HTTP_404_NOT_FOUND)
         except Exception as e:
             logger.error(f"Erreur lors de la récupération des stats du dashboard: {str(e)}")
             return Response({'error': 'Erreur interne du serveur.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

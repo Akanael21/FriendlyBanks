@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ReactNode } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faUsers, faFileInvoiceDollar, faCalendarAlt, faClock,
@@ -119,7 +119,7 @@ const Dashboard: React.FC = () => {
                 </div>
               </div>
               <p style={styles.berryInfo}>Votre pouvoir d’emprunt est calculé sur la base de votre score.</p>
-              <a href="/governance" style={styles.learnMoreLink}>En savoir plus <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: '4px' }} /></a>
+              <Link to="/governance" style={styles.learnMoreLink}>En savoir plus <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: '4px' }} /></Link>
             </div>
           </InfoCard>
 
