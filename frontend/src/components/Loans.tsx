@@ -4,6 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCheck, faTimes, faMoneyBillWave, faHistory, faCalculator } from '@fortawesome/free-solid-svg-icons';
 
+// Ajoutez après les imports FontAwesome, avant le hook useWindowSize
+const safeFormatNumber = (value: number | undefined | null): string => {
+  if (value === null || value === undefined || isNaN(value)) {
+    return '0';
+  }
+  return value.toLocaleString();
+};
+
 // --- HOOK POUR LA RESPONSIVITÉ ---
 const useWindowSize = () => {
   const [size, setSize] = useState([window.innerWidth]);
@@ -181,7 +189,7 @@ const Loans: React.FC = () => {
     
     let error = '';
     if (newLoanRequest.amount > maxAmount) {
-      error = `Le montant dépasse votre plafond de prêt de ${maxAmount.toLocaleString()} XAF.`;
+      error = `Le montant dépasse votre plafond de prêt de ${safeFormatNumber(maxAmount)} XAF.`;
     }
     
     return { maxAmount, interestRate, totalToRepay, error };
@@ -200,10 +208,10 @@ const Loans: React.FC = () => {
     let error = '';
     
     if (amount > loan.remaining_balance) {
-      error = `Le montant dépasse le solde restant (${(loan.remaining_balance ?? 0).toLocaleString()} XAF)`;
+      error = `Le montant dépasse le solde restant (${safeFormatNumber(loan.remaining_balance)} XAF)`;
     } else if (newRepayment.payment_type === 'interest_only') {
       if (amount > loan.remaining_interest) {
-        error = `Le montant dépasse les intérêts restants (${(loan.remaining_interest ?? 0).toLocaleString()} XAF)`;
+        error = `Le montant dépasse les intérêts restants (${safeFormatNumber(loan.remaining_interest)} XAF)`;
       } else {
         interestAmount = amount;
         capitalAmount = 0;
@@ -219,7 +227,7 @@ const Loans: React.FC = () => {
         
         // Vérifier le minimum de 10% du capital pour les remboursements de capital
         if (capitalAmount > 0 && capitalAmount < loan.minimum_monthly_payment && loan.remaining_capital > loan.minimum_monthly_payment) {
-          error = `Le remboursement de capital doit être d'au moins ${(loan.minimum_monthly_payment ?? 0).toLocaleString()} XAF (10% du capital restant)`;
+          error = `Le remboursement de capital doit être d'au moins ${safeFormatNumber(loan.minimum_monthly_payment)} XAF (10% du capital restant)`;
         }
       }
     }

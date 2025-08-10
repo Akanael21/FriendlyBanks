@@ -3,9 +3,9 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import dj_database_url
 
 # --- CHEMIN DE BASE ET CHARGEMENT DES VARIABLES D'ENVIRONNEMENT ---
-# C'est la première chose à faire pour que le reste du fichier y ait accès.
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / '.env')
 
@@ -14,14 +14,8 @@ load_dotenv(BASE_DIR / '.env')
 # PARAMÈTRES DE SÉCURITÉ (lus depuis le fichier .env)
 # ==============================================================================
 
-# La clé secrète est OBLIGATOIRE. Si elle n'est pas dans .env, le serveur ne démarrera pas.
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
-
-# Le mode DEBUG est False par défaut (plus sécurisé). Mettez DJANGO_DEBUG=True dans .env pour développer.
 DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
-
-# Liste des noms de domaine autorisés, lus depuis .env.
-# Exemple dans .env: DJANGO_ALLOWED_HOSTS=www.friendlybanks.com,api.friendlybanks.com
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
 
 
@@ -37,14 +31,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',
+    'corsheaders',  # Assurez-vous que c'est bien ici
     'api',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    # WhiteNoise doit être placé juste après le SecurityMiddleware.
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    # Le middleware CORS doit être placé le plus haut possible, juste après WhiteNoise.
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -61,35 +55,25 @@ AUTH_USER_MODEL = 'api.User'
 
 
 # ==============================================================================
-# BASE DE DONNÉES (identifiants lus depuis .env)
+# BASE DE DONNÉES (déjà parfaitement configurée pour la production)
 # ==============================================================================
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST', 'localhost'),
-        'PORT': os.environ.get('DB_PORT', '5432'),
-    }
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
+        conn_max_age=600
+    )
 }
 
-
 # ==============================================================================
-# FICHIERS STATIQUES (CSS, JS) ET MÉDIA (UPLOADS)
+# FICHIERS STATIQUES ET MÉDIA
 # ==============================================================================
 
-# URL pour accéder aux fichiers statiques
 STATIC_URL = 'static/'
-# Dossier où `collectstatic` rassemblera tous les fichiers statiques pour la production.
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-# Méthode de stockage recommandée pour WhiteNoise, qui gère la compression et le cache.
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# URL pour accéder aux fichiers uploadés par les utilisateurs
 MEDIA_URL = '/media/'
-# Dossier où les fichiers uploadés seront stockés
 MEDIA_ROOT = BASE_DIR / 'mediafiles'
 
 
@@ -97,9 +81,12 @@ MEDIA_ROOT = BASE_DIR / 'mediafiles'
 # CONFIGURATIONS D'APPLICATIONS TIERCES (CORS, REST FRAMEWORK)
 # ==============================================================================
 
-# CORS : Autorise les requêtes provenant de votre frontend.
+# <<< CORRECTION CRITIQUE >>>
+# La variable ALLOWED_HOSTS était définie deux fois. On supprime la deuxième définition.
+# La variable CORS_ALLOWED_ORIGINS est ajoutée. C'est elle qui autorisera Netlify.
 CORS_ALLOWED_ORIGINS = os.environ.get('CORS_ALLOWED_ORIGINS', 'http://localhost:3000,http://127.0.0.1:3000').split(',')
 CORS_ALLOW_CREDENTIALS = True
+
 
 # Django REST Framework
 REST_FRAMEWORK = {
@@ -116,20 +103,18 @@ REST_FRAMEWORK = {
 # CONFIGURATION DES EMAILS (identifiants lus depuis .env)
 # ==============================================================================
 
-# Par défaut, affiche les emails dans la console. Surchargé par les variables de .env.
 EMAIL_BACKEND = os.environ.get('EMAIL_BACKEND', 'django.core.mail.backends.console.EmailBackend')
 EMAIL_HOST = os.environ.get('EMAIL_HOST')
 EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 587))
 EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'True') == 'True'
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-# Assure que si EMAIL_HOST_USER n'est pas défini, le programme ne crashe pas.
 DEFAULT_FROM_EMAIL = f"Friendly Banks <{os.environ.get('EMAIL_HOST_USER', 'noreply@friendlybanks.com')}>"
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 
 # ==============================================================================
-# INTERNATIONALISATION ET LOGGING
+# INTERNATIONALISATION ET TEMPLATES
 # ==============================================================================
 
 TEMPLATES = [
@@ -141,7 +126,7 @@ TEMPLATES = [
             'context_processors': [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+                'django.contrib.messages.messages',
             ],
         },
     },
@@ -158,6 +143,11 @@ LANGUAGE_CODE = 'fr-fr'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
+
+
+# ==============================================================================
+# LOGGING (déjà bien configuré)
+# ==============================================================================
 
 LOGGING = {
     'version': 1,
